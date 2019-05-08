@@ -14,6 +14,7 @@ browser.get('https://web.whatsapp.com')
 bot_users = {} # A dictionary that stores all the users that sent activate bot 
 
 def bot_chatting():
+	old_response = ""
 	while True:
 		unread = browser.find_elements_by_class_name("OUeyt") # The green dot tells us that the message is new
 		name,message  = '',''
@@ -38,21 +39,24 @@ def bot_chatting():
 				message = browser.find_elements_by_class_name("_3zb-j")[-1]  # the message content
 				#if 'activate bot' in message.text.lower():
 				
-				if (message.text.lower().find('ativar bot') != -1):
-					if name not in bot_users:
-						bot_users[name] = True
-						text_box = browser.find_element_by_class_name("_2S1VP")
-						response = "Olá, " + name + ". Bot ativado!\n"
-						text_box.send_keys(response)
+				#if (message.text.lower().find('ativar bot') != -1):
+				if name not in bot_users:
+					bot_users[name] = True
+					#text_box = browser.find_element_by_class_name("_2S1VP")
+					#response = "Olá, " + name + ". Bot ativado!\n"
+					#text_box.send_keys(response)
 
 				if name in bot_users:
+					for nome in bot_users
 					text_box = browser.find_element_by_class_name("_2S1VP")
 					#response = message.text + "\n"
 					#text_box.send_keys(response)
 
 					#bot respondendo no chat
 					response = name + " disse: " + message.text
-					client_socket.send(bytes(response, "utf8"))
+					if (response != old_response):
+						client_socket.send(bytes(response, "utf8"))
+						old_response = response
 						
 					if (message.text.lower().find('desativar') != -1):
 						if name in bot_users:
@@ -61,11 +65,12 @@ def bot_chatting():
 							text_box.send_keys(response)
 							del bot_users[name]
 
+
 				idle = browser.find_element_by_class_name("_2wP_Y").e
 			except Exception as e:
 				print(e)
 				pass
-		#sleep(2) # A 2 second pause so that the program doesn't run too fast
+		#sleep(1) # A 2 second pause so that the program doesn't run too fast
 
 def receive():
     """Handles receiving of messages."""
