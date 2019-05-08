@@ -4,7 +4,9 @@ O programa foi construído com o objetivo de ser um bot para o Whatsappweb(WAW),
 
 Alcançado:
   -Codigo do servidor para o chat. Codigo para o usuario participar do Chat. Codigo do Bot que interage com o Chat e o WAW.
+  
   -O codigo do bot ja realiza algumas funções repetitivas que o usuario deverá fazer, como por exemplo: conecta automaticamente no servidor e ja possui nome no Chat.
+  
   -O bot se conecta com o whatsappweb e fica esperando novas mensagens, quando recebe uma mensagem nova, a mensagem é lida e enviada no Chat, no formato "<contato_trasmissor> disse: <contato_mensagem>"
  
 
