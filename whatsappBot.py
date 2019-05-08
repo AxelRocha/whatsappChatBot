@@ -80,7 +80,7 @@ def receive():
 def send(event=None):  # event is passed by binders.
     """Handles sending of messages."""
 	#mandando msg duas vezes ????
-    msg = my_msg.get()
+    #msg = my_msg.get()
     my_msg.set("")  # Clears input field.
     client_socket.send(bytes(msg, "utf8"))
     if msg == "{quit}":
