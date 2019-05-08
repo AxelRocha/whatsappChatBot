@@ -12,6 +12,10 @@ Alcançado:
  
 
 Problemas:
+
   Identificação de Contatos diferentes.
+  
   Quebra de linha em mensagens extensas.
+  
   Leitura de mais de uma mensagem de uma só vez.
+  
