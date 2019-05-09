@@ -1,15 +1,23 @@
 # **WhatsappChatBot**
 
-O programa foi construído com o objetivo de ser um bot para o Whatsappweb(WAW), onde este Bot se comunicaria com uma interface de Chat, onde esta seria um tipo de broadcast para os usuarios presente no Chat, posteriormente os usuarios do chat responderiam ali, e o Bot redicionaria para o Whatsappweb novamente.
+O programa foi construído com o objetivo de ser um bot para o WhatsApp Web(WAW), o bot se comunicaria com uma interface de Chat que realiza um broadcast para os usuários presentes no mesmo Chat e, posteriormente, os usuários responderiam a uma determinada mensagem enviada e o bot redirecionaria a resposta no WAW para o contato que informado pelo usuár.
 
 ## Alcançado:
 
-  - Codigo do servidor para o chat. Codigo para o usuario participar do Chat. Codigo do Bot que interage com o Chat e o WAW.
+  - Código do servidor para o chat. 
   
-  - O codigo do bot ja realiza algumas funções repetitivas que o usuario deverá fazer, como por exemplo: conecta automaticamente no servidor e ja possui nome no Chat.
+  - Código para o usuario participar do Chat. 
   
-  - O bot se conecta com o whatsappweb e fica esperando novas mensagens, quando recebe uma mensagem nova, a mensagem é lida e enviada no Chat, no formato "<contato_trasmissor> disse: <contato_mensagem>"
+  - Codigo do Bot que interage com o Chat e o WAW.
+  
+  - O bot se conecta ao servidor de Chat automaticamente.
+  
+  - O bot se conecta com o whatsappweb e fica esperando novas mensagens, quando recebe uma mensagem nova, a mensagem é lida e enviada no Chat, no formato "<contato_nome> disse: <contato_mensagem>".
  
+## Funcionamento:
+ - 1. Server: O servidor espera conexões e gerencia as mensagens de broadcast enviadas no Chat.
+ - 2. Cliente/Usuário : Se conecta ao servidor de forma manual ao executar o código. Depois de conectado o usuário tem acesso ao Chat e as mensagens enviadas pelo mesmo são recebidas por todos os outros usuários presentes no Chat.
+ - 3. WAW Bot: Abre o Whats App Web e espera a conexão via QRCODE. Se conecta automaticamente ao servidor do Chat. Com ambas as partes anteriores conectadas, o Bot monitora o WAW e quando recebe um nova mensagem, envia esta mensagem no Chat no formato "<contato_nome> disse: <contato_mensagem>".
 
 ## Problemas:
 
