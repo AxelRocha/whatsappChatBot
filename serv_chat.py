@@ -32,7 +32,7 @@ def handle_client(client):  # Takes client socket as argument.
             else:
                 broadcast(msg, name+": ")
         else:
-            client.send(bytes("{quit}", "utf8"))
+            #client.send(bytes("{quit}", "utf8")) nesse momento o cliente ja deu close no socket
             client.close()
             del clients[client]
             broadcast(bytes("%s has left the chat." % name, "utf8"))
