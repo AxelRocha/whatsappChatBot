@@ -32,8 +32,8 @@ def bot_chatting():
 			except Exception as e:
 				pass
 			try:
-				#name = browser.find_element_by_class_name("_3TEwt").text  # Contact name
-				name = browser.find_element_by_class_name("_1wjpf").text  # Contact name
+				name = browser.find_element_by_class_name("_3TEwt").text  # Contact name
+				#name = browser.find_element_by_class_name("_1wjpf").text  # Contact name
 				#message = browser.find_elements_by_class_name("vW7d1")[-1]  # the message content
 				#message = browser.find_elements_by_class_name("Tkt2p")[-1]  # the message content
 				message = browser.find_elements_by_class_name("_3zb-j")[-1]  # the message content
@@ -47,7 +47,7 @@ def bot_chatting():
 					#text_box.send_keys(response)
 
 				if name in bot_users:
-					for nome in bot_users
+					#for nome in bot_users
 					text_box = browser.find_element_by_class_name("_2S1VP")
 					#response = message.text + "\n"
 					#text_box.send_keys(response)
@@ -66,7 +66,7 @@ def bot_chatting():
 							del bot_users[name]
 
 
-				idle = browser.find_element_by_class_name("_2wP_Y").e
+				#idle = browser.find_element_by_class_name("_2wP_Y").e
 			except Exception as e:
 				print(e)
 				pass
