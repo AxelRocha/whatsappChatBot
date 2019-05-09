@@ -6,9 +6,9 @@ O programa foi construído com o objetivo de ser um bot para o WhatsApp Web(WAW)
 
   - Código do servidor para o chat. 
   
-  - Código para o usuario participar do Chat. 
+  - Código para o usuário participar do Chat. 
   
-  - Codigo do Bot que interage com o Chat e o WAW.
+  - Código do Bot que interage com o Chat e o WAW.
  
 ## Funcionamento:
  - 1. Server: O servidor espera conexões e gerencia as mensagens de broadcast enviadas no Chat.
@@ -17,7 +17,7 @@ O programa foi construído com o objetivo de ser um bot para o WhatsApp Web(WAW)
 
 ## Problemas:
 
-  - ~~Server instavel: quando usuário se desconecta, ocorre erro no server.~~
+  - ~~Server instável: quando usuário se desconecta, ocorre erro no server.~~
 
   - Identificação de Contatos diferentes.
   
