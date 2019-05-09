@@ -17,7 +17,7 @@ O programa foi construído com o objetivo de ser um bot para o WhatsApp Web(WAW)
 
 ## Problemas:
 
-  - ~~Server instável: quando usuário se desconecta, ocorre erro no server.~~
+  - ~~Servidor instável: quando usuário se desconecta, ocorre erro no servidor.~~
 
   - Identificação de Contatos diferentes.
   
