@@ -24,3 +24,10 @@ O programa foi construído com o objetivo de ser um bot para o WhatsApp Web(WAW)
   - Quebra de linha em mensagens extensas.
   
   - Leitura de mais de uma mensagem de uma só vez.
+  
+  
+ ## Referências:
+ 
+  Código baseado no trabalho do Saurabh Chaturvedi e S K Aravind.
+  
+  @github/schedutron e @github/skaravind respectivamente.
