@@ -1,6 +1,6 @@
 # **WhatsappChatBot**
 
-O programa foi construído com o objetivo de ser um bot para o WhatsApp Web(WAW), o bot se comunicaria com uma interface de Chat que realiza um broadcast para os usuários presentes no mesmo Chat e, posteriormente, os usuários responderiam a uma determinada mensagem enviada e o bot redirecionaria a resposta no WAW para o contato que informado pelo usuár.
+O programa foi construído com o objetivo de ser um bot para o WhatsApp Web(WAW), o bot se comunicaria com uma interface de Chat que realiza um broadcast para os usuários presentes no mesmo Chat e, posteriormente, os usuários responderiam a uma determinada mensagem enviada e o bot redirecionaria a resposta no WAW para o contato que foi informado pelo usuário.
 
 ## Alcançado:
 
